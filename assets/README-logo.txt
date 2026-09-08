@@ -1,0 +1,1 @@
+The centered logo artwork for the Apex Group landing page is stored as assets/apex-logo-center.png.
