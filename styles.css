@@ -5,11 +5,12 @@ body{margin:0;background:#090d12;color:var(--silver);font-family:Inter,Arial,san
 a{color:inherit;text-decoration:none}
 .hero-art{position:relative;width:100%;background:#071019;overflow:hidden;line-height:0}
 .hero-art img{display:block;width:100%;height:auto;object-fit:contain;object-position:center top;image-rendering:auto;filter:none;transform:none}
-.hero-nav-cleanup{position:absolute;z-index:2;left:51%;right:1.5%;top:1.6%;height:8.5%;background:linear-gradient(90deg,rgba(7,16,25,.94),rgba(8,19,30,.96) 45%,rgba(10,25,39,.94));backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);mask-image:radial-gradient(ellipse at center,#000 72%,transparent 100%);-webkit-mask-image:radial-gradient(ellipse at center,#000 72%,transparent 100%)}
-.hero-nav{position:absolute;z-index:3;top:4.0%;right:7.5%;display:flex;align-items:center;gap:56px;line-height:1}
-.hero-nav a{font-family:Montserrat,sans-serif;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#E9E5DE;transition:color .2s ease}
-.hero-nav a:hover{color:#C3945D}
-.explore-hotspot{position:absolute;z-index:3;left:42.3%;top:70.1%;width:14.7%;height:5.7%;display:block}
+.hero-hotspots{position:absolute;inset:0;pointer-events:none}
+.hotspot{position:absolute;display:block;pointer-events:auto;background:transparent}
+.about-link{left:70.6%;top:3.2%;width:6.1%;height:4.4%}
+.services-link{left:78.2%;top:3.2%;width:7.5%;height:4.4%}
+.contact-link{left:87.2%;top:3.2%;width:7.5%;height:4.4%}
+.explore-link{left:43.7%;top:61.4%;width:12.7%;height:5.4%}
 
 .section-shell{width:min(calc(100% - 80px),var(--max));margin:0 auto}
 .content-section{padding:108px 0;border-top:1px solid var(--line)}
@@ -33,10 +34,7 @@ h2{font-size:22px;line-height:1.35}
 
 @media(max-width:900px){
   .hero-art img{width:100%;height:100vh;min-height:100vh;object-fit:cover;object-position:62% center}
-  .hero-nav-cleanup{display:none}
-  .hero-nav{top:20px;right:20px;gap:20px}
-  .hero-nav a{font-size:9px;letter-spacing:.14em}
-  .explore-hotspot{display:none}
+  .hero-hotspots{display:none}
   .section-shell{width:min(calc(100% - 40px),var(--max))}
   .content-section{padding:82px 0}
   .split{grid-template-columns:1fr;gap:28px}
